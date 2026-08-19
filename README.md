@@ -34,50 +34,9 @@ By simply loading pre-trained weights and running inference (or fine-tuning the 
 
 ---
 
-## 🤖 Models Benchmarked
-
-| # | Model | Year | Top-1 Acc | Top-5 Acc | Params | Size |
-|---|---|---|---|---|---|---|
-| 1 | **AlexNet** | 2012 | 56.5% | 79.1% | 61 M | 233 MB |
-| 2 | **VGG-16** | 2014 | 71.6% | 90.4% | 138 M | 528 MB |
-| 3 | **VGG-19** | 2014 | 72.4% | 90.9% | 144 M | 549 MB |
-| 4 | **ResNet-18** | 2015 | 69.8% | 89.1% | 11 M | 45 MB |
-| 5 | **ResNet-50** | 2015 | 76.1% | 92.9% | 25 M | 98 MB |
-| 6 | **ResNet-101** | 2015 | 77.4% | 93.5% | 45 M | 171 MB |
-| 7 | **DenseNet-121** | 2017 | 74.4% | 91.9% | 8 M | 31 MB |
-| 8 | **Inception v3** | 2016 | 77.3% | 93.5% | 27 M | 104 MB |
-| 9 | **MobileNet v2** | 2018 | 71.9% | 90.3% | 3.4 M | 14 MB |
-| 10 | **EfficientNet-B0** | 2019 | 77.7% | 93.5% | 5.3 M | 20 MB |
-
 > 📌 Accuracy reported on ImageNet validation set (center-crop). Models loaded via `torchvision.models` with `pretrained=True`.
 
 ---
-
-## 🗂️ Project Structure
-
-```
-Image-Classification-of-Pre-trained-Models-Using-Pytorch/
-│
-├── 📓 notebooks/
-│   ├── Image_Classification_Pretrained_Models.ipynb   # Main notebook — load, infer, compare
-│   └── Model_Benchmark_Comparison.ipynb               # Accuracy & speed benchmarks
-│
-├── 🐍 src/
-│   ├── model_loader.py        # Load any torchvision pre-trained model by name
-│   ├── preprocess.py          # ImageNet-standard transforms pipeline
-│   ├── predict.py             # Single-image & batch inference
-│   └── utils.py               # Label decoding, plotting, helpers
-│
-├── 🖼️ assets/
-│   └── sample_images/         # Test images for quick demo
-│
-├── 📄 imagenet_classes.txt    # 1000 ImageNet class labels
-├── requirements.txt
-└── README.md
-```
-
----
-
 ## ⚙️ Setup
 
 ### Prerequisites
